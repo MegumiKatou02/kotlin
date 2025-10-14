@@ -39,7 +39,6 @@ fun HomeScreen(navController: NavController, modifier: Modifier = Modifier) {
             horizontalAlignment = Alignment.CenterHorizontally,
             modifier = Modifier.verticalScroll(rememberScrollState())
         ) {
-            // Tiêu đề
             Text(
                 text = "UI Components List",
                 color = Color(0xFF1E88E5),
@@ -48,7 +47,6 @@ fun HomeScreen(navController: NavController, modifier: Modifier = Modifier) {
                 modifier = Modifier.padding(vertical = 16.dp)
             )
 
-            // Group: Display
             ComponentGroup(
                 title = "Display",
                 items = listOf(
@@ -59,7 +57,6 @@ fun HomeScreen(navController: NavController, modifier: Modifier = Modifier) {
                 routes = listOf(Route.Demo.TEXT, Route.Demo.IMAGE)
             )
 
-            // Group: Input
             ComponentGroup(
                 title = "Input",
                 items = listOf(
@@ -70,7 +67,6 @@ fun HomeScreen(navController: NavController, modifier: Modifier = Modifier) {
                 routes = listOf(Route.Demo.TEXT_FIELD, Route.Demo.PASSWORD_FIELD)
             )
 
-            // Group: Layout
             ComponentGroup(
                 title = "Layout",
                 items = listOf(
@@ -81,7 +77,6 @@ fun HomeScreen(navController: NavController, modifier: Modifier = Modifier) {
                 routes = listOf(Route.Demo.COLUMN, Route.Demo.ROW)
             )
 
-            // Thẻ hồng ở cuối
             ComponentCard(
                 title = "Tự tìm hiểu",
                 description = "Tìm ra tất cả các thành phần UI cơ bản",

@@ -32,7 +32,7 @@ fun TextFieldDemoScreen(navController: NavController) {
     Scaffold(
         topBar = {
             TopBarComponent(title = "TextField") {
-                navController.popBackStack()
+                navController.navigateUp()
             }
         }
     ) { innerPadding ->

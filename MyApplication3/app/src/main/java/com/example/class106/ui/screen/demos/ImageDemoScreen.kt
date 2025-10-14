@@ -31,7 +31,7 @@ fun ImageDemoScreen(navController: NavController) {
     Scaffold(
         topBar = {
             TopBarComponent(title = "Images") {
-                navController.popBackStack()
+                navController.navigateUp()
             }
         }
     ) { innerPadding ->

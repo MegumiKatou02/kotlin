@@ -26,7 +26,7 @@ import com.example.class106.ui.theme.Class106Theme
         Scaffold(
             topBar = {
                 TopBarComponent(title = "Text Detail") {
-                    navController.popBackStack()
+                    navController.navigateUp()
                 }
             }
         ) { innerPadding ->

@@ -29,7 +29,7 @@ fun ColumnDemoScreen(navController: NavController) {
     Scaffold(
         topBar = {
             TopBarComponent(title = "Column Layout") {
-                navController.popBackStack()
+                navController.navigateUp()
             }
         }
     ) { innerPadding ->
