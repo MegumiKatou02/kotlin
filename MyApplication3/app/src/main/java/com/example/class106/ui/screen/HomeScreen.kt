@@ -76,13 +76,6 @@ fun HomeScreen(navController: NavController, modifier: Modifier = Modifier) {
                 navController = navController,
                 routes = listOf(Route.Demo.COLUMN, Route.Demo.ROW)
             )
-
-            ComponentCard(
-                title = "Tự tìm hiểu",
-                description = "Tìm ra tất cả các thành phần UI cơ bản",
-                backgroundColor = Color(0xFFFFCDD2), // hồng nhạt
-                textColor = Color.Black
-            )
         }
     }
 }

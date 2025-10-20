@@ -24,6 +24,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.myapplication.ui.theme.MyApplicationTheme
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.unit.sp
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -64,6 +65,7 @@ fun ProfileScreen(modifier: Modifier = Modifier) {
                 contentDescription = "Edit"
             )
         }
+
         Column(
             modifier = Modifier.align(Alignment.Center),
             horizontalAlignment = Alignment.CenterHorizontally
@@ -78,16 +80,17 @@ fun ProfileScreen(modifier: Modifier = Modifier) {
                 contentScale = ContentScale.Crop
             )
 
-            Spacer(modifier = Modifier.height(16.dp))
+            Spacer(modifier = Modifier.width(16.dp))
 
             Text(
-                text = "Johan Smith",
+                text = "Horimiya",
                 style = MaterialTheme.typography.titleLarge,
                 fontWeight = FontWeight.Bold,
+                fontSize = 20.sp
             )
 
             Text(
-                text = "California, USA",
+                text = "HCM, Viet Nam",
                 style = MaterialTheme.typography.bodyMedium,
                 color = Color.Gray
             )
